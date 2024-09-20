@@ -1,4 +1,4 @@
-//CUSTOMERS
+--//CUSTOMERS
 create table Customers (
 	customerID INT,
 	firstName VARCHAR(50),
@@ -7,14 +7,14 @@ create table Customers (
 	address VARCHAR(50),
 	vehicleID INT
 );
-//MECHANICS
+--//MECHANICS
 create table Mechanics (
 	mechanicID INT,
 	firstName VARCHAR(50),
 	lastName VARCHAR(50),
 	phoneNumber VARCHAR(50)
 );
-//SERVICEHISTORY
+--//SERVICEHISTORY
 create table ServiceHistory (
 	serviceID INT,
 	vehicleID INT,
@@ -24,7 +24,7 @@ create table ServiceHistory (
 	mechanicID VARCHAR(50),
 	notes VARCHAR(50)
 );
-//SERVICEREQUESTS
+--//SERVICEREQUESTS
 create table ServiceRequests (
 	requestID INT,
 	customerID INT,
@@ -34,7 +34,7 @@ create table ServiceRequests (
 	serviceStatus INT,
 	mechanicID INT
 );
-//VEHICLES
+--//VEHICLES
 create table Vehicles (
 	vehicleID INT,
 	model VARCHAR(50),
