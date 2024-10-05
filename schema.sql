@@ -1,4 +1,3 @@
---//CUSTOMERS
 create table Customers (
 	customerID INT,
 	firstName VARCHAR(50),
@@ -214,7 +213,6 @@ insert into Mechanics (mechanicID, firstName, lastName, phoneNumber) values (97,
 insert into Mechanics (mechanicID, firstName, lastName, phoneNumber) values (98, 'Mikey', 'Phettiplace', '7072592326');
 insert into Mechanics (mechanicID, firstName, lastName, phoneNumber) values (99, 'Stephana', 'Fiorentino', '2081097230');
 insert into Mechanics (mechanicID, firstName, lastName, phoneNumber) values (100, 'Philomena', 'Cayton', '7770495156');
---//SERVICEHISTORY
 create table ServiceHistory (
 	serviceID INT,
 	vehicleID INT,
@@ -324,7 +322,6 @@ insert into ServiceHistory (serviceID, vehicleID, serviceDate, serviceType, cost
 insert into ServiceHistory (serviceID, vehicleID, serviceDate, serviceType, cost, mechanicID, notes) values (98, 60, '2023-10-04 11:41:55', 'Accounting', 3717, '5066448322', '0342773186');
 insert into ServiceHistory (serviceID, vehicleID, serviceDate, serviceType, cost, mechanicID, notes) values (99, 20, '2024-08-07 22:50:06', 'Research and Development', 2314, '7205769590', '4477603339');
 insert into ServiceHistory (serviceID, vehicleID, serviceDate, serviceType, cost, mechanicID, notes) values (100, 14, '2024-06-01 03:51:44', 'Research and Development', 3085, '9823201021', '3561699766');
---//SERVICEREQUESTS
 create table ServiceRequests (
 	requestID INT,
 	customerID INT,
@@ -435,7 +432,6 @@ insert into ServiceRequests (requestID, customerID, vehicleID, requestDate, serv
 insert into ServiceRequests (requestID, customerID, vehicleID, requestDate, serviceType, serviceStatus, mechanicID) values (99, 41, 19, '2023-12-10 06:31:23', 'Business Development', 91, 78);
 insert into ServiceRequests (requestID, customerID, vehicleID, requestDate, serviceType, serviceStatus, mechanicID) values (100, 22, 88, '2023-11-11 04:30:33', 'Support', 76, 38);
 
---//VEHICLES
 create table Vehicles (
 	vehicleID INT,
 	model VARCHAR(50),
